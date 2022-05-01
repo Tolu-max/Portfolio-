@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <title>John Doe | UI/UX Designer & Photographer</title>
+  </head>
+  <body>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+}
+
+#main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+
+#main-nav a:hover {
+  border-color: #ccc;
+}
+
+#main-nav a.current {
+  border-color: #3a4ec0;
+}
+
+#header-home {
+  background: url("../img/show.jpg") no-repeat center right/cover;
+  height: 100vh;
+}
+
+#header-home .header-content {
+  text-align: center;
+  padding-top: 20%;
+}
+
+#header-home .header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+#header-inner {
+  background: url("../img/show.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #3a4ec0;
+}
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#home-a .specials .fas {
+  color: #3a4ec0;
+  padding-bottom: 0.4rem;
+}
+
+#home-b .stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#home-b .stats li {
+  line-height: 2;
+}
+
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+
+#home-b .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#home-b .stats div {
+  padding: 3rem 0;
+}
+
+#home-b .stats div:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+#home-b .stats div:nth-child(even) {
+  background: #ccc;
+}
+
+#home-c .process {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #3a4ec0;
+  color: #fff;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#home-c .process-icon {
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#home-c .process-icon:hover {
+  background: #3a4ec0;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#home-c .process-icon:hover .process-step {
+  background: #333;
+  color: #fff;
+}
+  </style>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/show.jpg" alt="" id="logo" />
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>
+            I Am Doe The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Photographer", "Designer", "UI/UX Dev"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I am specialized in UI/UX
+          </p>
+          <a href="work.html" class="btn-light waves-effect waves-teal">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section A: Specialize -->
+    <section id="home-a" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">I Specialize In</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Your Texts Here
+        </p>
+        <div class="specials">
+          <div>
+            <i class="fas fa-file-alt fa-2x"></i>
+            <h3>Concepting</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              molestias repellat quibusdam adipisci quas sed ullam accusantium
+              aliquam numquam quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-desktop fa-2x"></i>
+            <h3>UI/UX</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              molestias repellat quibusdam adipisci quas sed ullam accusantium
+              aliquam numquam quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-object-ungroup fa-2x"></i>
+            <h3>Visual Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              molestias repellat quibusdam adipisci quas sed ullam accusantium
+              aliquam numquam quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-thumbs-up fa-2x"></i>
+            <h3>Interaction</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              molestias repellat quibusdam adipisci quas sed ullam accusantium
+              aliquam numquam quidem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Stats -->
+    <section id="home-b" class="text-center py-2">
+      <div class="stats">
+        <div>
+          <ul>
+            <li><i class="fas fa-users fa-3x"></i></li>
+            <li class="stats-title">Clients</li>
+            <li class="stats-number">100</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-award fa-3x"></i></li>
+            <li class="stats-title">Awards</li>
+            <li class="stats-number">3</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
+            <li class="stats-title">Hours Worked</li>
+            <li class="stats-number">3500</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-code-branch fa-3x"></i></li>
+            <li class="stats-title">Projects Completed</li>
+            <li class="stats-number">135</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Process -->
+    <section id="home-c" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">
+          My Creative Process
+        </h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          All of my UI/UX and design projects are based off of a practiced
+          formula to get the result that I am looking for
+        </p>
+        <div class="process">
+          <div>
+            <i class="fas fa-file-alt fa-4x process-icon my-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Discuss The Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-desktop fa-4x process-icon my-2">
+              <div class="process-step">2</div>
+            </i>
+            <h3>Brainstorming Concept</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
+              <div class="process-step">3</div>
+            </i>
+            <h3>UI/UX Planning</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
+              <div class="process-step">4</div>
+            </i>
+            <h3>Interaction</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright Doe &copy; 2022. All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>
